@@ -1,13 +1,13 @@
 --
 --  RUBY - Rapid Urban Busy Youngsters
---  Interfaces.Ruby body file
+--  Interfaces_User.Ruby body file
 --
 
-package body Interfaces.Ruby is
+package body Interfaces_User.Ruby is
 
    procedure Dummy is
    begin
       null;
    end Dummy;
 
-end Interfaces.Ruby;
+end Interfaces_User.Ruby;

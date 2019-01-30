@@ -1,18 +1,18 @@
 
 --
 --  RUBY - Rapid Urban Busy Youngsters
---  RUBY GPR library project file
+--  RUBY test GPR library project file
 --
 
-library project Ruby is
+with "Ruby";
 
-  for Library_Name use "adaruby";
+project Ruby_Test is
+
   for Languages    use ("Ada");
-  for Source_Dirs  use
-    ("spec_source/",
-     "body_source/");
+  for Source_Dirs  use ("test/");
   for Object_Dir   use ".object/";
-  for Library_Dir  use "library/";
+  for Exec_Dir     use "binary/";
+  for Main         use ("test_build.adb");
   
   package Builder is
 
@@ -28,4 +28,4 @@ library project Ruby is
 
   end Builder;
 
-end Ruby;
+end Ruby_Test;
