@@ -4,13 +4,13 @@
 ##
 
 build:
-	gprbuild ruby.gpr
+	gprbuild -p ruby.gpr
 
 clean:
 	gprclean -q ruby.gpr
 
 build-test:
-	gprbuild ruby_test.gpr
+	gprbuild -p ruby_test.gpr
 
 clean-test:
 	gprclean -q ruby_test.gpr
