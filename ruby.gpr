@@ -1,0 +1,29 @@
+
+--
+--  RUBY - Rapid Urban Busy Youngsters
+--  RUBY GPR library project file
+--
+
+library project Ruby is
+
+  for Languages    use ("Ada");
+  for Source_Dirs  use
+    ("spec_source/",
+     "body_source/");
+  for Object_Dir   use ".object/";
+
+  package Builder is
+
+     for Default_Switches ("Ada") use
+       ("-g",
+        "-O1",
+        "-gnatf",
+        "-gnatwa",
+        "-gnatwj",
+        "-gnat2005",
+        "-gnaty",
+        "-gnatyM99");
+
+  end Builder;
+
+end Ruby;
